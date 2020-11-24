@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "gen": "postcss styles/tailwind.css -o styles/style.css",
+    "genw": "postcss src/styles/tailwind.css -o styles/style.css --watch"
   },
   "dependencies": {
     "next": "10.0.2",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.9",
+    "postcss-cli": "^8.3.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.1"
   }
